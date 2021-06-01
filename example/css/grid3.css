@@ -1,0 +1,42 @@
+body {
+    background-color: beige;
+}
+
+.container {
+    margin-left: 10px;
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.item {
+    margin: 10px;
+    width: 302px;
+    height: 302px;
+    background-color: skyblue;
+    /* border : 1px solid black; */
+}
+
+.item img {
+    width: 100%;
+}
+
+.title {
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    border: 4px solid black;
+    margin-top: -2px;
+    
+}
+
+.content  {
+    background-color: white;
+    padding: 24px;
+    text-align: center;
+    border: 4px solid black;
+    border-top : none;
+}
