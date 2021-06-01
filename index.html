@@ -133,8 +133,43 @@
         padding : 22.5px 30px;
     }
     
-    .right-menu > ul > li > a > i {
+    .right-menu > ul > li > a > i, .right-menu > ul > li > ul span{
         margin-right: 10px;
+    }
+
+    .right-menu > ul > li > ul{
+        display: none;
+        position: absolute;
+        background-color: #232323;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .right-menu > ul > li > ul > li {
+        width: 100%;
+    }
+
+    .right-menu > ul > li > ul > li > a {
+        padding-left : 12px;
+        padding-right: 15px; 
+    }
+
+    .right-menu > ul > li:hover > ul {
+        display: block;
+    }
+
+    .right-menu > ul > li > a:hover{
+        background-color: white;
+        color : black;
+    }
+
+    .right-menu > ul > li > ul > li > a:hover{
+        background-color: white;
+        color : black;
     }
 
 </style>
@@ -161,14 +196,22 @@
                 <ul>
                     <li><a href="#"><i class="fas fa-home"></i>HOME</a></li>
                     <li><a href="#"><i class="fas fa-address-card"></i>ABOUT ME</a></li>
-                    <li><a href="#"><i class="fas fa-newspaper"></i>ARTICLES</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i>ARTICLES</a>
+                        <ul>
+                            <li><a href="#"><span><i class="fas fa-code"></i></span>WEB CODING</a></li>
+                            <li><a href="#"><span><i class="fas fa-mobile-alt"></i></span>UX/UI</a></li>
+                        </ul>
+                    
+                    </li>
                     <li><a href="#"><i class="fas fa-code"></i>PORFOLIO</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <section class="layout">
-        <img src="https://picsum.photos/id/181/1200/500">
+    <section class="section layout">
+        <div>
+            <img src="https://picsum.photos/id/181/1200/500">
+        </div>
 
     </section>
 </body>
