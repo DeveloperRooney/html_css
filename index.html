@@ -78,6 +78,7 @@
     
     .layout img {
         margin : 30px auto;
+        margin-bottom: 0;
     }
 
     header {
@@ -172,6 +173,72 @@
         color : black;
     }
 
+    .work-list-box {
+        margin-left : 13px;
+    }
+
+    .work-list-box * {
+        display: inline-block;
+    }
+
+
+    .work-list-box > ul {
+        margin-left : 15px;
+        margin-right : 15px;
+    }
+
+    .work-list-box > ul > li {
+        width : 31%;
+        margin : 10px;
+    }
+
+    .img-box img {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .inline-grid {
+        margin: 0 !important; 
+    }
+
+    .work-name {
+        font-weight: bold;
+    }
+
+    .work-name, .work-date-period{
+        display: block;
+        text-align: center;
+    }
+
+
+    .work-list-box > ul > li > div > .img-box {
+        position : relative;
+        overflow : hidden;
+    }
+
+    .work-list-box > ul > li > div > .img-box > div {
+        background-color:rgba(0,0,0,0);
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        transition:background-color 1s;
+    }
+
+    .work-list-box > ul > li:hover > div > .img-box > div {
+        background-color:rgba(0,0,0,0.7);
+    }
+
+    .work-list-box > ul > li > div > .img-box > img {
+        transition: transform 1s;
+        z-index:-1;
+        position:relative;
+    }
+
+    .work-list-box > ul > li:hover > div > .img-box > img {
+        transform:scale(1.4);
+    }
 </style>
 
 <body>
@@ -212,6 +279,122 @@
         <div>
             <img src="https://picsum.photos/id/181/1200/500">
         </div>
+        <div class="work-list-box">
+            <ul class="inline-grid">
+              <li>
+                <div>
+                  <div class="img-box">
+                    <div></div>
+                    <img src="https://picsum.photos/id/185/500/500" alt="">
+                  </div>
+                  <div class="work-name">
+                    작품명1
+                  </div>
+                  <div class="work-date-period">
+                    2021-05, 2주
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="img-box">
+                    <div></div>
+                    <img src="https://picsum.photos/id/186/500/500" alt="">
+                  </div>
+                  <div class="work-name">
+                    작품명1
+                  </div>
+                  <div class="work-date-period">
+                    2021-05, 2주
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="img-box">
+                    <div></div>
+                    <img src="https://picsum.photos/id/187/500/500" alt="">
+                  </div>
+                  <div class="work-name">
+                    작품명1
+                  </div>
+                  <div class="work-date-period">
+                    2021-05, 2주
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="img-box">
+                    <div></div>
+                    <img src="https://picsum.photos/id/188/500/500" alt="">
+                  </div>
+                  <div class="work-name">
+                    작품명1
+                  </div>
+                  <div class="work-date-period">
+                    2021-05, 2주
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="img-box">
+                    <div></div>
+                    <img src="https://picsum.photos/id/189/500/500" alt="">
+                  </div>
+                  <div class="work-name">
+                    작품명1
+                  </div>
+                  <div class="work-date-period">
+                    2021-05, 2주
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="img-box">
+                    <div></div>
+                    <img src="https://picsum.photos/id/190/500/500" alt="">
+                  </div>
+                  <div class="work-name">
+                    작품명1
+                  </div>
+                  <div class="work-date-period">
+                    2021-05, 2주
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="img-box">
+                    <div></div>
+                    <img src="https://picsum.photos/id/191/500/500" alt="">
+                  </div>
+                  <div class="work-name">
+                    작품명1
+                  </div>
+                  <div class="work-date-period">
+                    2021-05, 2주
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="img-box">
+                    <div></div>
+                    <img src="https://picsum.photos/id/192/500/500" alt="">
+                  </div>
+                  <div class="work-name">
+                    작품명1
+                  </div>
+                  <div class="work-date-period">
+                    2021-05, 2주
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
 
     </section>
 </body>
