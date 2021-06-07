@@ -1,0 +1,126 @@
+/* 로보토 Condensed 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+/* 롯데마트드림 폰트 */
+@font-face {
+    font-family: "LotteMartDream";
+    font-style: normal;
+    font-weight: 400;
+    src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2")
+    format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff")
+    format("woff");
+}
+
+@font-face {
+    font-family: "LotteMartDream";
+    font-style: normal;
+    font-weight: 700;
+    src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2")
+    format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff")
+    format("woff");
+}
+    
+@font-face {
+    font-family: "LotteMartDream";
+    font-style: normal;
+    font-weight: 300;
+    src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2")
+    format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff")
+    format("woff");
+}
+    
+html {
+    font-family: "Roboto Condensed", "LotteMartDream", sans-serif;
+}
+.layout {
+    margin : 0 auto;
+    width: 75%;
+}
+
+
+/* 노멀라이징 */
+body {
+    margin : 0;
+    padding : 0;
+    min-width: 1100px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #232323;
+}
+
+.topmenu {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topmenu span{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    padding : 20px 15px;
+}
+
+.topmenu .logo-area i {
+    font-size: 22px;
+}
+
+.topmenu a {
+    font-size: 17px;
+    /* font-weight: bold; */
+    padding: 24px 20px;
+}
+
+.right-menu li {
+    display: inline-block;
+}
+
+
+.right-menu a:hover{
+    background-color: white;
+    color : black;
+}
+
+section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+section img {
+    width: 85%;
+}
+
+.grid-area {
+    width: 64%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 27%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+}
