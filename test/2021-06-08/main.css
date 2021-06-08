@@ -156,19 +156,16 @@ section div > img {
 }
 
 .img-box {
-    position: relative;
     width: 100%;
+    position: relative;
     overflow: hidden;
 }
 
-.img-box img {
-}
 
 .img-box > div {
-    background-color: black;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+
+}
+
+.work-list-box > ul > li:hover > div > .img-box > div {
+    background-color:rgba(0,0,0,0.7);
 }
