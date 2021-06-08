@@ -1,0 +1,174 @@
+/* 로보토 Condensed 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+/* 롯데마트드림 폰트 */
+@font-face {
+    font-family: "LotteMartDream";
+    font-style: normal;
+    font-weight: 400;
+    src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2")
+    format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff")
+    format("woff");
+}
+
+@font-face {
+    font-family: "LotteMartDream";
+    font-style: normal;
+    font-weight: 700;
+    src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2")
+    format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff")
+    format("woff");
+}
+    
+@font-face {
+    font-family: "LotteMartDream";
+    font-style: normal;
+    font-weight: 300;
+    src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2")
+    format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff")
+    format("woff");
+}
+    
+html {
+    font-family: "Roboto Condensed", "LotteMartDream", sans-serif;
+}
+
+
+body {
+    padding : 0;
+    margin : 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin : 0;
+}
+
+/* 사이즈 조절 */
+
+body {
+    min-width: 1150px;
+}
+
+
+/* Util */
+
+.layout {
+    width: 80%;
+    margin : 0 auto;
+}
+
+header {
+    background-color: #232323;
+    color: white;
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-area {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.logo-area span {
+    display: inline-block;
+    padding : 14px 0;
+}
+
+
+.menu-area > ul > li{
+    display: inline-block;
+}
+
+.menu-area > ul > li {
+    position: relative;
+}
+
+.menu-area > ul > li > a {
+    padding: 20px 20px;
+}
+
+.menu-area > ul > li:hover > a{
+    background-color: white;
+    color: black;
+}
+
+
+.menu-area > ul > li:hover ul {
+    display: block;
+}
+
+.menu-area > ul > li > ul a:hover {
+    background-color: white;
+    color : black;
+}
+
+.menu-area > ul > li > ul a {
+    display: inline-block;
+    width: 100%;
+    padding : 17px 0; 
+}
+
+.menu-area > ul > li > ul {
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #232323;
+    top: 200%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+section > div {
+    margin : 0 auto;
+    text-align: center;
+}
+
+section div > img {
+    margin : 20px auto;
+    width: 85%;
+}
+
+.inline-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inline-grid > li {
+    width: 30%;
+}
+
+.img-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-box img {
+}
+
+.img-box > div {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
