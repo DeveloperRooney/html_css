@@ -75,9 +75,53 @@
                 </ul>
             </div>
             <div class="hamburger">
-                <i class="fas fa-bars"></i>
+                <a href="javascript:hamburger()">
+                    <i class="fas fa-bars"></i>
+                </a>
             </div>
+        </div>
+        <div class="dropdown" id="dropdown">
+            <ul>
+                <li>
+                    <a href="#">BACK</a>
+                </li>
+                <li>
+                    <a href="#">FRONT</a>
+                </li>
+                <li>
+                    <a href="#">BOARD</a>
+                </li>
+                <li>
+                    <a href="#">JOIN</a>
+                </li>
+                <li>
+                    <a href="#">LOGOUT</a>
+                </li>
+            </ul>
         </div>
     </header>
 </body>
+
+<script>
+    function hamburger() {
+
+        var dropdown = document.getElementById("dropdown");
+
+        if (dropdown.style.display != "block") {
+            dropdown.style.display = "block";
+        }
+        
+        else{
+            dropdown.style.display = "none";
+        }
+    }
+
+    var mql = window.matchMedia("screen and (min-width: 625px)");
+
+    if (mql.matches) {
+        dropdown.style.display = "none";
+    }
+
+</script>
+
 </html>
