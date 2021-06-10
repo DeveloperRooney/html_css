@@ -52,7 +52,7 @@ html {
     }   
 }
 
-@media screen and (max-width : 720px) {
+@media screen and (max-width : 665px) {
     
     .logo-area {
         margin-top: 16px;
@@ -151,12 +151,37 @@ header {
     /* display: none; */
 }
 
-.dropdown ul {
-    /* position: absolute; */
-}
 
 .dropdown li {
     display: block;
     padding: 12px 0;
     font-weight: bold;
+}
+
+/* index */
+
+.index {
+    display: grid;
+    grid-gap : 10px;
+    grid-template-areas: 'banner banner'
+                         'dev board';
+}
+
+.index div {
+    padding:20px;
+    border: 1px solid black;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.dev {
+    grid-area: dev;
+
+}
+
+.board {
+    grid-area: board;
+
 }
