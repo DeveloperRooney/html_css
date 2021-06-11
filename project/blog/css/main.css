@@ -79,6 +79,10 @@ header {
     background-color: #125d98;
     color: white;
     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .topmenu {
@@ -220,11 +224,18 @@ header {
     margin-left : 10px;
 }
 
-.index .title {
+.index .title{
     font-size: 1.3rem;
     font-weight: bold;
     padding: 10px 0;
 }
+/* 
+.index .info {
+    padding : 10px 0;
+    text-align: right;
+    font-weight: bold;
+    color: #125d98;
+} */
 
 
 
