@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+    <!-- google search -->
+    <meta name="google-site-verification" content="rO1iqBlveMA7WnQ54ujKB0cphf6e9tAUqXtKsJywpg4" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/user.css">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <title>Document</title>
+    <title>Developer-Han :: Main</title>
 </head>
 
 
@@ -22,7 +26,7 @@
         <div class="topmenu layout">
             <div class="logo-area">
                 <span>
-                    <a href="#">
+                    <a href="index.php">
                         <i class="fab fa-connectdevelop"></i>
                         Developer-Han
                     </a>
@@ -67,7 +71,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="login.php">
                             <i class="fas fa-user"></i>
                             LOGIN
                         </a>
@@ -95,7 +99,7 @@
                     <a href="#">JOIN</a>
                 </li>
                 <li>
-                    <a href="#">LOGOUT</a>
+                    <a href="login.php">LOGIN</a>
                 </li>
             </ul>
         </div>
@@ -109,6 +113,7 @@
 
         if (dropdown.style.display != "block") {
             dropdown.style.display = "block";
+            dropdown.style.backgroundColor = "#125e98c2";
         }
         
         else{
@@ -116,6 +121,11 @@
         }
     }
 
+    window.addEventListener('resize', function() {
+        if(window.innerWidth >= "666") {
+            dropdown.style.display = "none";
+        }
+    }, true);
 </script>
 
 </html>
